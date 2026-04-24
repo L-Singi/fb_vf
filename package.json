@@ -1,0 +1,21 @@
+{
+  "name": "fb-elegance-lux",
+  "version": "1.0.0",
+  "description": "E-commerce platform for FB Elegance Lux",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "npx http-server public -p 3000",
+    "build": "echo 'No build step required for static site'",
+    "start": "npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["ecommerce", "supabase", "netlify"],
+  "author": "L.Singi",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
