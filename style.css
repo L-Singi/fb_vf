@@ -343,4 +343,24 @@ body {
 
     /* Esconde setas de navegação no mobile */
     .product-card .nav-arrow { display: none; }
+
+    /* Modal de detalhes no mobile — sobe como sheet da base */
+    .modal { padding: 0; align-items: flex-end; }
+    .modal-content {
+        width: 100%;
+        max-width: 100%;
+        max-height: 90vh;
+        overflow-y: auto;
+        border-radius: 20px 20px 0 0;
+    }
+    .modal-grid { grid-template-columns: 1fr; }
+    .modal-gallery { padding: 12px; }
+    .modal-main-img { aspect-ratio: 4/3; border-radius: 12px; margin-bottom: 8px; }
+    .modal-thumbs { gap: 6px; }
+    .modal-thumb { width: 48px; height: 48px; }
+    .modal-info { padding: 16px; }
+    .modal-info h2 { font-size: 1.2rem; margin-bottom: 4px; }
+    .modal-price { font-size: 1.2rem; margin: 8px 0; }
+    .modal-desc { font-size: 0.85rem; margin: 10px 0; }
+    .modal-whatsapp { width: 100%; justify-content: center; margin-top: 12px; padding: 12px; }
 }
