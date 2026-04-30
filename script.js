@@ -200,6 +200,7 @@
         let sizeHtml = '';
         if (prod.categoria==='vestuario' && prod.tamanhos?.length) sizeHtml = `<div class="product-size-info">Tamanhos: ${prod.tamanhos.join(', ')}</div>`;
         else if (prod.categoria==='calcados' && prod.numeracao) sizeHtml = `<div class="product-size-info">Numeração: ${prod.numeracao}</div>`;
+        const descHtml = prod.descricao_completa ? `<p class="product-desc-preview">${escapeHtml(prod.descricao_completa)}</p>` : '';
         card.innerHTML = `
             <div class="product-image-container">
                 <span class="status-badge ${sClass}">${sLabel}</span>
@@ -210,6 +211,7 @@
                 <div class="product-category">${catLabel}</div>
                 <h3 class="product-title">${escapeHtml(prod.nome)}</h3>
                 <p class="product-price">${prod.preco}</p>
+                ${descHtml}
                 ${sizeHtml}
                 <button class="btn-add-cart${isSold?' disabled':''}" ${isSold?'disabled':''}><i class="fas fa-cart-plus"></i> ${isSold?'Indisponível':'Adicionar'}</button>
                 <button class="btn-details"><i class="fas fa-expand-alt"></i> Detalhes</button>
