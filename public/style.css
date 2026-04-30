@@ -359,7 +359,7 @@ body {
         border-radius: 16px !important;
     }
     #productModal .modal-grid {
-        grid-template-columns: 1fr 1fr !important;
+        grid-template-columns: 60% 40% !important;
         height: 72vh;
         max-height: 72vh;
         overflow: hidden;
